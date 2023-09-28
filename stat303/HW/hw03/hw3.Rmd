@@ -1,0 +1,177 @@
+---
+title: "STAT 303 Homework 3"
+output: html_document
+---
+
+We'll grade your homework by
+
+* opening your "hw3.Rmd" file in RStudio
+* clicking "Knit HTML"
+* reading the HTML output
+* reading your "hw3.Rmd"
+
+You should write R code anywhere you see an empty R code chunk. You
+should write English text anywhere you see "..."; please surround it
+with doubled asterisks (`**...**`) so that it will show up as boldface
+and be easy for us to find.
+
+Include reasonable labels (titles, axis labels, legends, etc.) with
+each of your graphs.
+
+Name: **Ayken Askapuli**
+
+Email: **askapuli@wisc.edu**
+
+We'll use data on housing values in suburbs of Boston. They are in an
+R package called "MASS." (An R package is a collection of code,
+data, and documentation. "MASS" refers to the book "Modern Applied
+Statistics with S." R developed from the earlier language, S.) The
+MASS package comes with the default R installation, so it's already on
+your computer.  However, it's not loaded into your R session by
+default. So we'll load it via the `require()` command (there's nothing
+for you to do here):
+
+```{r}
+require("MASS")
+```
+
+Run `?Boston` (outside this R Markdown document) to read the help page for the `Boston` data frame.
+
+Convert the `chas` variable to a factor with labels "off" and "on" (referring to the Charles river).
+
+```{r}
+boston_data <- Boston
+boston_data$chas <- factor(Boston$chas, levels = c("0", "1"), labels = c("off", "on"))
+```
+
+How many rows are in the Boston data frame? How many columns?
+
+```{r}
+dim(boston_data)
+```
+
+What does a row represent?
+**506**
+
+What does a column represent?
+**14**
+
+Make a density plot (with rug) of tax rates.
+
+```{r}
+tax_den <- density(boston_data$tax)
+plot(tax_den, main = "Denisty Plot for Tax Rates", ylab = "Density", xlab = "Property Tax Rate")
+rug(boston_data$tax) # if you run rug() separate from the above lines of code, it cause errors;
+```
+
+Describe the shape of the distribution of tax rates.
+**The tax rate has a bimodal distribution.**
+
+Note that the distribution shape doesn't make sense in light of the rug representation of the data. Make a histogram of the tax rates.
+
+```{r}
+hist(boston_data$tax, xlim = c(100, 800), ylim = c(0, 140), main = "Histogram for Tax Rates",
+     xlab = "Property Tax Rate", col = "aquamarine")
+```
+
+Why is the second peak of the density plot so large? In what way is the rug representation of the data inadequate? Write a line or two of code to figure it out, and then explain it.
+
+```{r}
+stripchart(boston_data$tax, method = "jitter", 
+     main = "Dot Plot for Tax Rates",
+     xlab = "Property Tax Rate", col = "aquamarine4", pch = 2)
+```
+
+**Under the second peak of the density plot, there are many data points with various values, so the peak is large. As shown in the density plot above, the rug cannot portray the actual data points, because many data points with the same value are given as a single data point. In contrast, the dot plot (i.e. one dimensional scatter plot) can display the data points better, especially with the "jitter" method.**  
+
+Make a barplot of "chas".
+
+```{r}
+river_status <- table(boston_data$chas)
+barplot(river_status, main = "Bar Plot for Charles River in Boston",
+        xlab = "River Access Status", ylab = "Nr of Neighborhoods", 
+        ylim = c(0, 500), col = "aquamarine4") 
+```
+
+How many neighborhoods are on the Charles river?
+
+```{r}
+river_status <- table(boston_data$chas)
+river_status_dataframe <- as.data.frame(river_status)
+on_river <- river_status_dataframe[2,2]
+cat(on_river, "neighborhoods are on the Charles River.")
+```
+
+Make a single graph consisting of three plots: 
+
+* a scatterplot of "nox" on the y-axis vs. "dis" on the x-axis 
+* a (vertical) boxplot of "nox" left of the scatterplot's y-axis
+* a (horizontal) boxplot of "dis" below the scatterplot's x-axis
+
+Hint: use `layout()` with a 4x4 matrix, using the top-right 3x3 corner
+for the scatterplot, leaving the bottom-left 1x1 corner blank, and
+using the other parts for the boxplots.
+
+(An optional challenge, worth 0 extra credit points: remove the axis
+and plot border from each boxplot.)
+
+```{r, fig.width=7, fig.height=7}
+mtx <- matrix(data = c(2,2,1,1,
+                       2,2,1,1,
+                       0,0,3,3,
+                       0,0,3,3), byrow = TRUE, nrow = 4, ncol = 4)
+
+layout(mtx)
+
+#layout.show(layout(mtx))
+
+plot_01 <- plot(boston_data$dis, boston_data$nox, main = "Scatter Plot for Boston Data", 
+                xlab = "Mean Distance from Employment Centers", 
+                ylab = "Concentration of Nitrogen Oxide", 
+                xlim = c(1, 12.5),
+                cex.axis = 1.5, 
+                cex.lab = 1 , cex.main = 1.2, 
+                col = "aquamarine4")
+plot_02 <- boxplot(boston_data$nox, main = "Concentration of Nitrogen Oxide",
+                   cex.axis = 1.5, 
+                   cex.main = 1.2, col = "aquamarine4")
+plot_03 <- boxplot(boston_data$dis, main = "Mean Distance from Employment Centers",
+                   cex.axis = 1.5, 
+                   cex.main = 1.2, col = "aquamarine4", horizontal = TRUE)
+```
+
+Look into the highest-crime neighborhood by making a single graph of one column of three rows:
+
+* Find the row number, r, of the neighborhood with the highest "crim".
+* Make a density plot of "crim". Include a rug to show the data.
+* Add a red circle at (x, y) = (max crime rate, 0) to make this maximum crime rate stand out.
+* Make a density plot with rug of "medv", adding a red circle at (x, y) = (medv[r], 0) to see what medv corresponds to the highest crime rate.
+* Repeat the last step for "ptratio".
+
+```{r}
+plot(row.names(boston_data), boston_data$crim, 
+     xlab = "Row Name", ylab = "Per Capita Crime Rate", col = "aquamarine4")
+
+text(row.names(boston_data) ~ boston_data$crim, 
+     labels=rownames(boston_data),data = boston_data, 
+     cex = 0.5, font = 1, col = "steelblue", pos = 1 )
+
+crime_density <- density(boston_data$crim)
+plot_crime <- plot(crime_density, main = "Crime Density Plot for Boston")
+rug(boston_data$crim)
+points(88.97620, 0, col = "red")
+
+medv_density <- density(boston_data$medv)
+plot_medv <- plot(medv_density, main = "Median Value of Homes (in $1000)")
+rug(boston_data$medv)
+points(boston_data$medv[381], 0, col = "red")
+
+ptratio_density <- density(boston_data$ptratio)
+plot_ptratio <- plot(ptratio_density, main = "Pupil-Teacher Ratio")
+rug(boston_data$ptratio)
+points(boston_data$ptratio[381], 0, col = "red")
+```
+
+What do you notice about the ptratio and medv for the highest-crime neighborhood?
+
+**From the graphs we can infer that people live in the neighborhood with the highest crime rate own cheap homes (~$10K) and the neighborhood has higher pupil-teacher ratio (1:20 or more).**
