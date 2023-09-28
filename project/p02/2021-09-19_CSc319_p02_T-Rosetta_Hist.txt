@@ -1,0 +1,172 @@
+Last login: Sat Sep 18 11:14:40 on console
+/Users/Tek/.zprofile:1: no such file or directory: /opt/homebrew/bin/brew
+(base) Tek@Tastulek-MacPro ~ % bash
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ pwd
+/Users/Tek
+bash-3.2$ cd Desktop/cs319/
+bash-3.2$ ls
+lab01		lectureNotes	p01
+bash-3.2$ mkdir p02
+bash-3.2$ ls
+lab01		lectureNotes	p01		p02
+bash-3.2$ ls
+lab01		lectureNotes	p01		p02
+bash-3.2$ cd p02/
+bash-3.2$ ls
+README.md		main.ipynb		test.py
+cs-220-test.ipynb	result.json
+bash-3.2$ python test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/p02/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 15547 bytes to /Users/Tek/Desktop/cs319/p02/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: no outputs in an Out[N] cell
+  Test 5: no outputs in an Out[N] cell
+  Test 6: no outputs in an Out[N] cell
+  Test 7: no outputs in an Out[N] cell
+  Test 8: no outputs in an Out[N] cell
+  Test 9: no outputs in an Out[N] cell
+  Test 10: expected to find type int but found type str
+  Test 11: expected ':-(:-):-):-)' but found ':-(:-(:-(:-)'
+  Test 12: expected to find type int but found type str
+  Test 13: expected 49 but found 343
+  Test 14: no outputs in an Out[N] cell
+  Test 15: expected True but found False
+  Test 16: expected True but found False
+  Test 17: expected True but found False
+  Test 18: expected to find type bool but found type int
+  Test 19: expected True but found False
+  Test 20: no outputs in an Out[N] cell
+
+TOTAL SCORE: 15.00%
+bash-3.2$ ls
+README.md		main.ipynb		test.py
+cs-220-test.ipynb	result.json		trial.py
+bash-3.2$ python test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/p02/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 17074 bytes to /Users/Tek/Desktop/cs319/p02/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: expected 7040 but found 6400
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: no Out[N] output found for cell (note: printing the output does not work)
+
+TOTAL SCORE: 90.00%
+bash-3.2$ python test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/p02/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 17067 bytes to /Users/Tek/Desktop/cs319/p02/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: PASS
+
+TOTAL SCORE: 100.00%
+bash-3.2$ 

@@ -1,0 +1,621 @@
+Last login: Sat Oct  2 17:59:34 on ttys002
+/Users/Tek/.zprofile:1: no such file or directory: /opt/homebrew/bin/brew
+(base) Tek@Tastulek-MacPro lab04 % bash
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ bash
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ pwd
+/Users/Tek/Desktop/cs319/lab/lab04
+bash-3.2$ ls
+README.md			pokemon_stats.csv
+__pycache__			project.py
+gen_csv.ipynb			type_effectiveness_stats.csv
+lab04_trial.ipynb
+bash-3.2$ cd ../..
+bash-3.2$ ls
+lab		lectureNotes	project
+bash-3.2$ cd project/
+bash-3.2$ cd p04
+bash-3.2$ ls
+README.md			pokemon_stats.csv
+__pycache__			project.py
+gen_csv.ipynb			test.py
+main.ipynb			type_effectiveness_stats.csv
+bash-3.2$ python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 3272 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: not found
+  Test 4: not found
+  Test 5: not found
+  Test 6: not found
+  Test 7: not found
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 10.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 5643 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: not found
+  Test 6: not found
+  Test 7: not found
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 20.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 10751 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: expected 22.5 but found 11.25
+  Test 7: PASS
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 30.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 10768 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 35.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 12886 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 45.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 15574 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: expected 'Sceptile' but found 'Krabby'
+  Test 11: expected 'Heracross' but found 'Blastoise'
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 45.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 15574 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 55.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 16954 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 65.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 22529 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: no outputs in an Out[N] cell
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 75.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 21584 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 80.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 20268 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 80.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 25824 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: PASS
+
+TOTAL SCORE: 100.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 25317 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: PASS
+
+TOTAL SCORE: 100.00%
+bash-3.2$ !!
+python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p04/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 25314 bytes to /Users/Tek/Desktop/cs319/project/p04/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: PASS
+
+TOTAL SCORE: 100.00%
+bash-3.2$ 

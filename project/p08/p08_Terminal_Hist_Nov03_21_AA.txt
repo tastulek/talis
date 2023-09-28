@@ -1,0 +1,1230 @@
+Last login: Tue Nov  2 18:22:25 on ttys000
+/Users/Tek/.zprofile:1: no such file or directory: /opt/homebrew/bin/brew
+(base) Tek@Tastulek-MacPro p08 % ls
+README.md		movies.csv		test.py
+main.ipynb		small_mapping.csv
+mapping.csv		small_movies.csv
+(base) Tek@Tastulek-MacPro p08 % python3 test.py 
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 12913 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: not found
+  Test 5: not found
+  Test 6: not found
+  Test 7: not found
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 15.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 14309 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: not found
+  Test 6: not found
+  Test 7: not found
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 20.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+Traceback (most recent call last):
+  File "/Users/Tek/opt/anaconda3/bin/jupyter-nbconvert", line 11, in <module>
+    sys.exit(main())
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/jupyter_core/application.py", line 254, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/traitlets/config/application.py", line 845, in launch_instance
+    app.start()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/nbconvertapp.py", line 350, in start
+    self.convert_notebooks()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/nbconvertapp.py", line 524, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/nbconvertapp.py", line 489, in convert_single_notebook
+    output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/nbconvertapp.py", line 418, in export_single_notebook
+    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/exporter.py", line 181, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/exporter.py", line 199, in from_file
+    return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/notebook.py", line 32, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/exporter.py", line 143, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/exporter.py", line 318, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/preprocessors/base.py", line 47, in __call__
+    return self.preprocess(nb, resources)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/preprocessors/execute.py", line 79, in preprocess
+    self.execute()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 553, in async_execute
+    await self.async_execute_cell(
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/preprocessors/execute.py", line 123, in async_execute_cell
+    cell, resources = self.preprocess_cell(cell, self.resources, cell_index)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/preprocessors/execute.py", line 146, in preprocess_cell
+    cell = run_sync(NotebookClient.async_execute_cell)(self, cell, index, store_history=self.store_history)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nest_asyncio.py", line 70, in run_until_complete
+    return f.result()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/asyncio/futures.py", line 178, in result
+    raise self._exception
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/asyncio/tasks.py", line 280, in __step
+    result = coro.send(None)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 857, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 760, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# replacing the IDs with actual names of the movies;
+
+
+
+def rename_title(raw_file, map_file):
+    refined_dict_list = []
+    
+    # Load the data from raw movie data file as list of ditcs 
+    # and mapping file as dict;
+    raw_dict_list = get_raw_movie(raw_file)
+    map_data_dict = get_mapping(map_file)
+    
+    # loop through all dicts in the list and replace alpha-numeric title name with
+    # actual name using the map_data_dict;
+    n =0
+    for item in raw_dict_list:
+        title_id = item['title'] 
+        
+        # replace the alpha-numberic name with the actual name;
+        if title_id in map_data_dict:
+            real_name = map_data_dict[title_id]
+            item['title'] = real_name
+        
+        # add the updated dict to the list;
+        refined_dict_list.append(item)
+
+    return refined_dict_list
+
+    
+rename_title("small_movies.csv", "small_mapping.csv" )    
+------------------
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-401a6116ea74> in <module>
+     28 
+     29 
+---> 30 rename_title("small_movies.csv", "small_mapping.csv" )
+
+<ipython-input-1-401a6116ea74> in rename_title(raw_file, map_file)
+      8     # Load the data from raw movie data file as list of ditcs
+      9     # and mapping file as dict;
+---> 10     raw_dict_list = get_raw_movie(raw_file)
+     11     map_data_dict = get_mapping(map_file)
+     12 
+
+NameError: name 'get_raw_movie' is not defined
+NameError: name 'get_raw_movie' is not defined
+
+Traceback (most recent call last):
+  File "test.py", line 636, in <module>
+    main()
+  File "test.py", line 581, in main
+    nb = rerun_notebook(orig_notebook)
+  File "test.py", line 293, in rerun_notebook
+    subprocess.check_output(cmd, shell=True)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/subprocess.py", line 415, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'jupyter nbconvert --execute "/Users/Tek/Desktop/cs319/project/p08/main.ipynb" --to notebook --output="/Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb" --ExecutePreprocessor.timeout=120' returned non-zero exit status 1.
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 15535 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: at index 0 of the list, incorrect val for key 'rating' in dict: expected to find type float but found type str
+  Test 6: not found
+  Test 7: not found
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 20.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 16597 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: at index 0 of the list, incorrect val for key 'actors' in dict: at index 1 of the value, expected 'nm0000288' but found ' nm0000288'
+  Test 6: not found
+  Test 7: not found
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 20.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 16577 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: not found
+  Test 7: not found
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 25.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 17410 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: not found
+  Test 8: not found
+  Test 9: not found
+  Test 10: not found
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 30.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 24373 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: not found
+  Test 12: not found
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 50.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 343082 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: at index 0 of the list, incorrect val for key 'rating' in dict: expected 6.2 but found 5.5 (found 1001 entries in list, but expected 3)
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 55.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 343166 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: at index 0 of the list, incorrect val for key 'rating' in dict: expected 6.2 but found 5.5 (found 1001 entries in list, but expected 3)
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 55.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+Traceback (most recent call last):
+  File "/Users/Tek/opt/anaconda3/bin/jupyter-nbconvert", line 11, in <module>
+    sys.exit(main())
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/jupyter_core/application.py", line 254, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/traitlets/config/application.py", line 845, in launch_instance
+    app.start()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/nbconvertapp.py", line 350, in start
+    self.convert_notebooks()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/nbconvertapp.py", line 524, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/nbconvertapp.py", line 489, in convert_single_notebook
+    output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/nbconvertapp.py", line 418, in export_single_notebook
+    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/exporter.py", line 181, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/exporter.py", line 199, in from_file
+    return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/notebook.py", line 32, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/exporter.py", line 143, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/exporters/exporter.py", line 318, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/preprocessors/base.py", line 47, in __call__
+    return self.preprocess(nb, resources)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/preprocessors/execute.py", line 79, in preprocess
+    self.execute()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 553, in async_execute
+    await self.async_execute_cell(
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/preprocessors/execute.py", line 123, in async_execute_cell
+    cell, resources = self.preprocess_cell(cell, self.resources, cell_index)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbconvert/preprocessors/execute.py", line 146, in preprocess_cell
+    cell = run_sync(NotebookClient.async_execute_cell)(self, cell, index, store_history=self.store_history)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nest_asyncio.py", line 70, in run_until_complete
+    return f.result()
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/asyncio/futures.py", line 178, in result
+    raise self._exception
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/asyncio/tasks.py", line 280, in __step
+    result = coro.send(None)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 857, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 760, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+#Q12: What are the movies between the indices 2017 and 2019 (inclusive) in movies?
+
+selected_movies[2017:2020]       
+------------------
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-784ac98e9f38> in <module>
+      1 #Q12: What are the movies between the indices 2017 and 2019 (inclusive) in movies?
+      2 
+----> 3 selected_movies[2017:2020]
+
+NameError: name 'selected_movies' is not defined
+NameError: name 'selected_movies' is not defined
+
+Traceback (most recent call last):
+  File "test.py", line 636, in <module>
+    main()
+  File "test.py", line 581, in main
+    nb = rerun_notebook(orig_notebook)
+  File "test.py", line 293, in rerun_notebook
+    subprocess.check_output(cmd, shell=True)
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/subprocess.py", line 415, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/Tek/opt/anaconda3/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'jupyter nbconvert --execute "/Users/Tek/Desktop/cs319/project/p08/main.ipynb" --to notebook --output="/Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb" --ExecutePreprocessor.timeout=120' returned non-zero exit status 1.
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 27326 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: not found
+  Test 14: not found
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 60.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 33142 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: not found
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 70.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 43389 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: unexpected datatype found in list; expect a list of entries of type str
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 70.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 37170 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: in the list, expected to find type str but found type list
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 70.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 36701 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: not found
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 75.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 37342 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: expected to find type list but found type str
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 75.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 37738 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: not found
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 80.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 38491 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: expected 5611 but found 5610
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 80.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 38450 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: not found
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 85.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 39430 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: not found
+  Test 20: not found
+
+TOTAL SCORE: 90.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 18031632 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: in the list, found unexpected 'Clayne Crawford' (found 16 entries in list, but expected 8)
+  Test 20: no Out[N] output found for cell (note: printing the output does not work)
+
+TOTAL SCORE: 90.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 43741 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: no outputs in an Out[N] cell
+
+TOTAL SCORE: 95.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 44135 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: PASS
+
+TOTAL SCORE: 100.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 44135 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: PASS
+
+TOTAL SCORE: 100.00%
+(base) Tek@Tastulek-MacPro p08 % python3 test.py
+/bin/sh: py: command not found
+[NbConvertApp] Converting notebook /Users/Tek/Desktop/cs319/project/p08/main.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 44135 bytes to /Users/Tek/Desktop/cs319/project/p08/cs-220-test.ipynb
+Checking question 1
+Checking question 2
+Checking question 3
+Checking question 4
+Checking question 5
+Checking question 6
+Checking question 7
+Checking question 8
+Checking question 9
+Checking question 10
+Checking question 11
+Checking question 12
+Checking question 13
+Checking question 14
+Checking question 15
+Checking question 16
+Checking question 17
+Checking question 18
+Checking question 19
+Checking question 20
+
+Summary:
+  Test 1: PASS
+  Test 2: PASS
+  Test 3: PASS
+  Test 4: PASS
+  Test 5: PASS
+  Test 6: PASS
+  Test 7: PASS
+  Test 8: PASS
+  Test 9: PASS
+  Test 10: PASS
+  Test 11: PASS
+  Test 12: PASS
+  Test 13: PASS
+  Test 14: PASS
+  Test 15: PASS
+  Test 16: PASS
+  Test 17: PASS
+  Test 18: PASS
+  Test 19: PASS
+  Test 20: PASS
+
+TOTAL SCORE: 100.00%
+(base) Tek@Tastulek-MacPro p08 % 
